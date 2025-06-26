@@ -1,0 +1,104 @@
+Dokumentáció utazóűgynök probléma:
+
+Ez a program a Travelling Salesman Problem (TSP) problémát oldja meg genetikus algoritmus segítségével. A cél, hogy találjon 
+egy olyan útvonalat, amely N darab város között a lehető legkisebb távolságot biztosít úgy, hogy minden várost egyszer érintünk.
+
+2. Bemenet és Kimenet
+
+Bemenet:
+
+A program egy szöveges fájlból olvassa be a városok számát és azok koordinátáit. A fájl első sora az N számot tartalmazza, 
+ami a városok számát jelenti, majd az azt követő sorokban a városok síkbeli koordinátái (x, y) szerepelnek.
+
+Formátum:
+
+N
+x1,y1
+x2,y2
+...
+xN,yN
+Kimenet:
+
+A program az optimalizált (legrövidebb) útvonal városainak indexeit és a hozzá tartozó távolságot jeleníti meg.
+
+3. Program Működése
+
+A program a következő lépésekben valósítja meg a genetikus algoritmusokat a TSP megoldásához:
+
+Városok Betöltése:
+
+A városokat egy szöveges fájlból olvassa be, és a koordinátákat listába menti. A fájl beolvasása aszinkron módon történik a 
+LoadCities metódussal.
+
+Kezdőpopuláció Generálása:
+
+A program véletlenszerűen generál egy kezdeti populációt, amely P darab útvonalat tartalmaz. Minden útvonal egy permutációja 
+a városoknak.
+
+Fitnesz Függvény:
+
+A fitnesz függvény a teljes útvonal hosszát számítja ki. A cél, hogy a genetikus algoritmus a legrövidebb távolságú útvonalat 
+találja meg, ezért a program a legkisebb távolsággal rendelkező megoldásokat részesíti előnyben.
+
+Genetikus Algoritmus:
+
+Szelektálás: A program turnusos szelekciót alkalmaz, ahol egy véletlenszerűen kiválasztott populációból választja ki a szülőket.
+
+Keresztezés: Az "Ordered Crossover" (OX) módszert használja, amely biztosítja, hogy az új generációk érvényes útvonalakat 
+eredményeznek.
+
+Mutáció: A program swap vagy reverse mutációval módosítja a szülők útvonalait, hogy diverzifikálja a megoldásokat és 
+elkerülje a helyi minimumokat.
+
+Iterációk és Statisztikák:
+
+A genetikus algoritmus több generáción keresztül fut. Minden egyes generáció után frissíti a legjobb megtalált megoldást, és az 
+aktuális legjobb távolságot megjeleníti a felhasználói felületen.
+
+Az algoritmus addig fut, amíg el nem éri a maximális generációszámot, vagy egy megadott kritérium szerint meg nem áll 
+(pl. nincs érdemi javulás).
+
+UI és Vizuális Megjelenítés:
+
+A legjobb megoldást egy grafikus felületen is megjeleníti, ahol a városok piros pontokkal, az útvonal pedig kék vonalakkal 
+van ábrázolva.
+
+4. Kód Struktúra
+
+Form1: 
+
+A fő felület, amely a program vezérléséért felelős. A felhasználó itt tölti be a városokat, indítja el az algoritmust, és 
+látja az eredményeket.
+
+LoadCities:
+
+A városok adatainak betöltéséért felelős aszinkron metódus, amely a szöveges fájlokból olvassa be a koordinátákat.
+
+RunGeneticAlgorithm: 
+
+A genetikus algoritmus futtatásáért felelős metódus, amely a szelektálás, keresztezés és mutáció lépéseit 
+végrehajtja.
+
+EvaluateFitness: 
+
+A fitnesz függvény kiértékelése, amely kiszámítja az egyes útvonalak hosszát.
+
+Crossover, Mutation: 
+
+A genetikus algoritmus keresztezési és mutációs operátorai, amelyek az új generációk létrehozásáért felelősek.
+
+5. Javasolt Fejlesztések
+
+Megállási Feltétel: A program nem tartalmaz explicite megállási feltételt. Javasolt bevezetni például a konvergenciát, ha az iterációk 
+során nem történik jelentős javulás.
+
+Szálkezelés: Bár a Task.Run() aszinkron módon futtatja az algoritmust, párhuzamosítással és több szálon való futtatással a nagyobb 
+problémák esetén gyorsabbá tehető.
+
+További Keresztezési Típusok: Más keresztezési típusok, például PMX (Partially Mapped Crossover) is kipróbálhatók.
+
+6. Következtetés
+
+Ez a program egy működő genetikus algoritmus implementációját adja a Travelling Salesman Problem megoldásához. A program 
+aszinkron módon betölti az adatokat, végrehajtja az algoritmust, és vizualizálja a legjobb megoldást a felhasználó számára. A kód 
+jól alkalmazható kisebb városok számával rendelkező problémákra, és a jövőbeli fejlesztések révén még jobban optimalizálható.
