@@ -1,0 +1,16 @@
+C:\Users\Mark\Documents\Visual Studio 2022\Travelling_Salesman_Problem\Travelling_Salesman_Problem\bin\Debug\net6.0-windows\Travelling_Salesman_Problem.exe
+C:\Users\Mark\Documents\Visual Studio 2022\Travelling_Salesman_Problem\Travelling_Salesman_Problem\bin\Debug\net6.0-windows\Travelling_Salesman_Problem.deps.json
+C:\Users\Mark\Documents\Visual Studio 2022\Travelling_Salesman_Problem\Travelling_Salesman_Problem\bin\Debug\net6.0-windows\Travelling_Salesman_Problem.runtimeconfig.json
+C:\Users\Mark\Documents\Visual Studio 2022\Travelling_Salesman_Problem\Travelling_Salesman_Problem\bin\Debug\net6.0-windows\Travelling_Salesman_Problem.dll
+C:\Users\Mark\Documents\Visual Studio 2022\Travelling_Salesman_Problem\Travelling_Salesman_Problem\bin\Debug\net6.0-windows\Travelling_Salesman_Problem.pdb
+C:\Users\Mark\Documents\Visual Studio 2022\Travelling_Salesman_Problem\Travelling_Salesman_Problem\obj\Debug\net6.0-windows\Travelling_Salesman_Problem.Form1.resources
+C:\Users\Mark\Documents\Visual Studio 2022\Travelling_Salesman_Problem\Travelling_Salesman_Problem\obj\Debug\net6.0-windows\Travelling_Salesman_Problem.csproj.GenerateResource.cache
+C:\Users\Mark\Documents\Visual Studio 2022\Travelling_Salesman_Problem\Travelling_Salesman_Problem\obj\Debug\net6.0-windows\Travelling_Salesman_Problem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mark\Documents\Visual Studio 2022\Travelling_Salesman_Problem\Travelling_Salesman_Problem\obj\Debug\net6.0-windows\Travelling_Salesman_Problem.AssemblyInfoInputs.cache
+C:\Users\Mark\Documents\Visual Studio 2022\Travelling_Salesman_Problem\Travelling_Salesman_Problem\obj\Debug\net6.0-windows\Travelling_Salesman_Problem.AssemblyInfo.cs
+C:\Users\Mark\Documents\Visual Studio 2022\Travelling_Salesman_Problem\Travelling_Salesman_Problem\obj\Debug\net6.0-windows\Travelling_Salesman_Problem.csproj.CoreCompileInputs.cache
+C:\Users\Mark\Documents\Visual Studio 2022\Travelling_Salesman_Problem\Travelling_Salesman_Problem\obj\Debug\net6.0-windows\Travelling_Salesman_Problem.dll
+C:\Users\Mark\Documents\Visual Studio 2022\Travelling_Salesman_Problem\Travelling_Salesman_Problem\obj\Debug\net6.0-windows\refint\Travelling_Salesman_Problem.dll
+C:\Users\Mark\Documents\Visual Studio 2022\Travelling_Salesman_Problem\Travelling_Salesman_Problem\obj\Debug\net6.0-windows\Travelling_Salesman_Problem.pdb
+C:\Users\Mark\Documents\Visual Studio 2022\Travelling_Salesman_Problem\Travelling_Salesman_Problem\obj\Debug\net6.0-windows\Travelling_Salesman_Problem.genruntimeconfig.cache
+C:\Users\Mark\Documents\Visual Studio 2022\Travelling_Salesman_Problem\Travelling_Salesman_Problem\obj\Debug\net6.0-windows\ref\Travelling_Salesman_Problem.dll
